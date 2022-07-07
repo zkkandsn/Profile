@@ -1,0 +1,16 @@
+{
+  "firstname": "Хүрэлнинж",
+  "name": "Мягмаржаргал",
+  "age": 26,
+  "major": {
+    "major1": "Социологич",
+    "major2": "FullStack Developer",
+    "major3": "Гэр бүл судлаач"
+  },
+  "img": "/Users/mstars_lab3_01/Desktop/Profile/Back-End/picture/profile.jpeg",
+  "born": "1996.01.18нд Улаанбаатар хотод төрсөн.",
+  "highschool": "2012онд 23-р дугаар сургуулийг төгссөн.",
+  "university": "2013-2015 онд Hallym University суралцаж байсан",
+  "university1": "2016-2020 онд ООУБИС-ийн Гэр бүл судлал, Социологи мэргэжлээр төгссөн.",
+  "academy": "2022онд MStars Academy суралцаж байна"
+}
