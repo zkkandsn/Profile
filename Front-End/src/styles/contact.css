@@ -1,0 +1,45 @@
+.icon1 {
+  width: 20px;
+  height: 20px;
+}
+.phone {
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+}
+.phone:hover {
+  text-decoration: underline;
+  color: black;
+}
+.message {
+  width: 500px;
+  height: 150px;
+}
+.message::placeholder {
+  text-align: start;
+  font-family: inherit;
+}
+#name {
+  width: 500px;
+  height: 50px;
+}
+.button {
+  background-color: black;
+  color: white;
+  font-size: larger;
+  width: 150px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border-color: none;
+  border: none;
+  height: 50px;
+}
+.phone1 {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #ffff;
+}
+.phone1:hover {
+  text-decoration: underline;
+  color: #ffff;
+}

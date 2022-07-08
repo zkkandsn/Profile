@@ -18,9 +18,9 @@ export default function About() {
           <Link to="/contact">Contact</Link>
           <a href="http://www.facebook.com/z1kkan">Facebook</a>
         </div>
-        <div className="d-flex mt-5">
-          <img className="profile" src="./pictures/profile.jpeg" alt="" />
-          <div>
+        <div className="d-flex mt-5 col-12">
+          <img className="profile col-6" src="./pictures/profile.jpeg" alt="" />
+          <div className="col-6">
             <h1>
               {data.firstname}&nbsp;
               {data.name}

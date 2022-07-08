@@ -16,3 +16,6 @@
   width: 350px;
   margin: auto;
 }
+.about a:hover {
+  text-decoration: underline;
+}

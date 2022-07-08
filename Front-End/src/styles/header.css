@@ -11,3 +11,6 @@
   font-style: normal;
   font-size: 100%;
 }
+.header a:hover {
+  text-decoration: underline;
+}
