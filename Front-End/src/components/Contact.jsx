@@ -15,7 +15,7 @@ export default function Contact() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
-        <a href="http://www.facebook.com/z1kkan">Facebook</a>
+        <a target="_blank" href="http://www.facebook.com/z1kkan">Facebook</a>
       </div>
       <div className="mt-5 align-items-center flex-column m-auto d-flex">
         <h1 className="">Contact me</h1>

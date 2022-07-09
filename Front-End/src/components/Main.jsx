@@ -22,7 +22,7 @@ export default function Main() {
         <div className="m-auto d-flex flex-column mt-5">
           <img
             className="profilePic"
-            src="./pictures/profile.jpeg"
+            src={data.img}
             alt="profile"
           />
           <div
@@ -49,7 +49,7 @@ export default function Main() {
                 About me
               </p>
               <Collapse in={open}>
-                <div className="aboutme" id="example-collapse-text">
+                <div className="aboutmes" id="example-collapse-text">
                   <li>{data.born}</li>
                   <li>{data.highschool}</li>
                   <li>{data.university}</li>
@@ -68,7 +68,7 @@ export default function Main() {
                 My work
               </p>
               <Collapse in={open1}>
-                <div className="aboutme" id="example-collapse-text">
+                <div className="aboutmes" id="example-collapse-text">
                   <li>{data.work}</li>
                 </div>
               </Collapse>
@@ -83,7 +83,7 @@ export default function Main() {
                 Contact me
               </p>
               <Collapse in={open2}>
-                <div className="aboutme" id="example-collapse-text">
+                <div className="aboutmes" id="example-collapse-text">
                   <div className="d-flex  justify-content-between col-8 mb-4 m-auto align-items-start">
                     <div className="d-flex">
                       <img
@@ -130,10 +130,10 @@ export default function Main() {
                 aria-expanded={open3}
                 type="button"
               >
-                My family
+                About me
               </p>
               <Collapse in={open3}>
-                <div className="aboutme d-flex justify-content-between col-6 m-auto" id="example-collapse-text">
+                <div className="aboutme" id="example-collapse-text">
                   <li>{data?.family?.wife}</li>
                   <li>{data?.family?.girl}</li>
                   <li>{data?.family?.boy}</li>
@@ -141,6 +141,21 @@ export default function Main() {
               </Collapse>
             </div>
           </div>
+        </div>
+        <div className="d-flex iconsLogo justify-content-around m-auto">
+          <a target="_blank" href="http://www.facebook.com/z1kkan">
+          <img src="./pictures/facebook.svg" alt="" />
+          </a>
+          <a target="_blank" href="http://www.instagram.com/zkkan">
+          <img src="./pictures/instagram.svg" alt="" />
+          </a>
+          <a target="_blank" href="http://www.twitter.com/z1kkan">
+          <img src="./pictures/twitter.svg" alt="" />
+          </a>
+          
+        </div>
+        <div className="created">
+          Created By @Miigaa
         </div>
       </div>
     </>

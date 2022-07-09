@@ -34,4 +34,23 @@
 }
 .aboutme {
   color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: auto;
+}
+.aboutmes {
+  color: #ffff;
+}
+.iconsLogo img{
+  width: 30px;
+  height: 30px;
+}
+.iconsLogo{
+  width: 150px;
+}
+.created{
+  text-align: end;
+  color:#ffff;
+  margin-right: 50px;
 }

@@ -7,7 +7,7 @@
     "major2": "FullStack Developer",
     "major3": "Гэр бүл судлаач"
   },
-  "img": "/Users/mstars_lab3_01/Desktop/Profile/Back-End/picture/profile.jpeg",
+  "img": "./pictures/profile.jpeg",
   "born": "1996.01.18нд Улаанбаатар хотод төрсөн.",
   "highschool": "2012онд 23-р дугаар сургуулийг төгссөн.",
   "university": "2013-2015 онд Hallym University суралцаж байсан",
