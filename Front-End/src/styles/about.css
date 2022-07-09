@@ -11,6 +11,11 @@
   font-style: normal;
   font-size: 100%;
 }
+.aboutName h1:hover{
+  background-color: yellow;
+
+}
+
 .profile {
   border-radius: 200px;
   width: 350px;

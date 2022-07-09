@@ -10,7 +10,7 @@ export default function Header() {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
-          <a href="http://www.facebook.com/z1kkan">Facebook</a>
+          <a target="_blank" href="http://www.facebook.com/z1kkan">Facebook</a>
         </div>
       </div>
     </>

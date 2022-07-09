@@ -93,6 +93,7 @@ export default function Main() {
                       />
                       <a
                         className="phone1"
+                        target="_blank"
                         href="https://www.google.com/maps/@47.8975143,106.8929807,19.07z"
                       >
                         {data.address}
@@ -104,7 +105,7 @@ export default function Main() {
                         src="./pictures/phone-call.svg"
                         alt=""
                       />
-                      <a className="phone1" href="tel:976-99844998">
+                      <a className="phone1"  href="tel:976-99844998">
                         {data?.phone}
                       </a>
                     </div>
@@ -132,7 +133,11 @@ export default function Main() {
                 My family
               </p>
               <Collapse in={open3}>
-                <div className="aboutme" id="example-collapse-text"></div>
+                <div className="aboutme d-flex justify-content-between col-6 m-auto" id="example-collapse-text">
+                  <li>{data?.family?.wife}</li>
+                  <li>{data?.family?.girl}</li>
+                  <li>{data?.family?.boy}</li>
+                </div>
               </Collapse>
             </div>
           </div>

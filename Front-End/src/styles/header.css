@@ -14,3 +14,6 @@
 .header a:hover {
   text-decoration: underline;
 }
+.header a::selection{
+  text-decoration: underline;
+}

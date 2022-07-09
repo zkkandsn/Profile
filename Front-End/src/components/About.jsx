@@ -20,7 +20,7 @@ export default function About() {
         </div>
         <div className="d-flex mt-5 col-12">
           <img className="profile col-6" src="./pictures/profile.jpeg" alt="" />
-          <div className="col-6">
+          <div className="aboutName col-6">
             <h1>
               {data.firstname}&nbsp;
               {data.name}
