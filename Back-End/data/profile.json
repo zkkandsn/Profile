@@ -7,7 +7,12 @@
     "major2": "FullStack Developer",
     "major3": "Гэр бүл судлаач"
   },
-  "img": "./pictures/profile.jpeg",
+  "img": {
+    "profile":"./pictures/profile.jpeg",
+    "profile1":"./pictures/profile1.jpg",
+    "profile2":"./pictures/profile2.jpg",
+    "profile3":"./pictures/profile3.jpg"
+  },
   "born": "1996.01.18нд Улаанбаатар хотод төрсөн.",
   "highschool": "2012онд 23-р дугаар сургуулийг төгссөн.",
   "university": "2013-2015 онд Hallym University суралцаж байсан",
@@ -21,5 +26,24 @@
     "wife": "Н.Янжмаа",
     "boy":"М.Цэлмэг",
     "girl":"М.Гэгээлэн"
+  },
+  "backgrounds":{
+    "background":"./pictures/background.jpg",
+    "background1":"./pictures/background1.jpg"
+  },
+  "hobbys":{
+    "hobby1":"Сагсан бөмбөг үзэх, тоглох",
+    "hobby2":"Хөлбөмбөг тоглох",
+    "hobby3":"Пүүл Биллъард тоглох",
+    "hobby4":"Караокед дуулах",
+    "hobby5":"Хип хоп хөгжим сонсох",
+    "hobby6":"Дууны үг цээжлэх"
+  },
+  "lifestyle":{
+    "style1":"Гэр бүл үргэлж НЭГТ",
+    "style2":"Хичээл, Сургалт",
+    "style3":"Хувийн бизнесс",
+    "style4":"Аав, ээж",
+    "style5":"Найз нөхөд"
   }
 }
