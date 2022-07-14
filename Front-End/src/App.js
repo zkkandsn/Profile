@@ -4,10 +4,12 @@ import "./styles/app.css";
 import Header from "./components/Header";
 import Content from "./content/Content";
 
+
 function App() {
   return (
     <div>
       <Content />
+      
     </div>
   );
 }

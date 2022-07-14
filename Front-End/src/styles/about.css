@@ -1,6 +1,5 @@
 .about {
   width: 500px;
-  margin-top: auto;
 }
 .about a {
   font-family: lato;
@@ -11,16 +10,31 @@
   font-style: normal;
   font-size: 100%;
 }
-.aboutName h1:hover{
-  background-color: yellow;
-
+.aboutName{
+  color: black;
 }
-
 .profile {
-  border-radius: 200px;
+  border-radius: 75px;
   width: 350px;
-  margin: auto;
+  height: 350px;
 }
+.profile:hover {
+  border-radius: 75px;
+  opacity: 0.8;
+}
+
 .about a:hover {
   text-decoration: underline;
+}
+
+.span{
+ position: absolute;
+ color:black;
+ font-size: 35px;
+ opacity: 0;
+ width: 350px;
+ height: 350px;
+}
+.span:hover{
+opacity: 1;
 }

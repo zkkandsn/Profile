@@ -2,6 +2,7 @@ import "../styles/main.css";
 import { useEffect, useState } from "react";
 import Header from "./Header";
 import { Collapse } from "react-bootstrap";
+import Footer from "./Footer";
 
 export default function Main() {
   const [data, setData] = useState([]);
@@ -14,22 +15,44 @@ export default function Main() {
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);
-  console.log(data);
+const style = {
+  color: "black"
+}
+  function background1() {
+    document.querySelector("#background").style.background =
+      "url('./pictures/background.jpg') center center /cover";
+    document.querySelector("h2").style.color = "white";
+    document.querySelector("h4").style.color = "white";
+    document.querySelector("p").style.color = "white";
+    document.querySelector("div").style.color = "white";
+  }
+  function background2() {
+    document.querySelector("#background").style.background =
+      "url('./pictures/background1.jpg') center center /cover";
+    document.querySelector("h2").style.color = "black";
+    document.querySelector("h4").style.color = "black";
+    document.querySelector("p").style.color = "black";
+    document.querySelector("#blackTag").style.color = "black";
+  }
+  function background3() {
+    document.querySelector("#background").style.background =
+      "rgb(250, 140, 151)";
+    document.querySelector("h2").style.color = "white";
+    document.querySelector("h4").style.color = "white";
+    document.querySelector("p").style.color = "white";
+    document.querySelector("div").style.color = "white";
+  }
   return (
     <>
-      <div className="background">
+      <div id="background">
         <Header />
         <div className="m-auto d-flex flex-column mt-5">
-          <img
-            className="profilePic"
-            src={data.img}
-            alt="profile"
-          />
+          <img className="profilePic" src={data?.img?.profile} alt="profile" />
           <div
             className="name col-8 m-auto d-flex flex-column align-items-center
         "
           >
-            <h2 className="">{data.name}</h2>
+            <h2>{data.name}</h2>
             <h4>
               {data && data?.major?.major1}|{data && data?.major?.major2}|
               {data && data?.major?.major3}
@@ -39,7 +62,7 @@ export default function Main() {
 
         <div className="container mt-5">
           <div>
-            <div className="main mb-4">
+            <div id="blackTag" className="main mb-4">
               <p
                 onClick={() => setOpen(!open)}
                 aria-controls="example-collapse-text"
@@ -94,6 +117,7 @@ export default function Main() {
                       <a
                         className="phone1"
                         target="_blank"
+                        rel="noreferrer"
                         href="https://www.google.com/maps/@47.8975143,106.8929807,19.07z"
                       >
                         {data.address}
@@ -105,7 +129,7 @@ export default function Main() {
                         src="./pictures/phone-call.svg"
                         alt=""
                       />
-                      <a className="phone1"  href="tel:976-99844998">
+                      <a className="phone1" href="tel:976-99844998">
                         {data?.phone}
                       </a>
                     </div>
@@ -130,33 +154,30 @@ export default function Main() {
                 aria-expanded={open3}
                 type="button"
               >
-                About me
+                My family
               </p>
               <Collapse in={open3}>
                 <div className="aboutme" id="example-collapse-text">
-                  <li>{data?.family?.wife}</li>
-                  <li>{data?.family?.girl}</li>
-                  <li>{data?.family?.boy}</li>
+                  <p style={style}>Эхнэр:</p> <p> {data?.family?.wife}</p>
+                  <p style={style}>Охин:</p> <p> {data?.family?.girl}</p>
+                  <p style={style}>Хүү:</p> <p> {data?.family?.boy}</p>
                 </div>
               </Collapse>
             </div>
           </div>
         </div>
-        <div className="d-flex iconsLogo justify-content-around m-auto">
-          <a target="_blank" href="http://www.facebook.com/z1kkan">
-          <img src="./pictures/facebook.svg" alt="" />
-          </a>
-          <a target="_blank" href="http://www.instagram.com/zkkan">
-          <img src="./pictures/instagram.svg" alt="" />
-          </a>
-          <a target="_blank" href="http://www.twitter.com/z1kkan">
-          <img src="./pictures/twitter.svg" alt="" />
-          </a>
-          
+        <div className="back-frem d-flex justify-content-center m-auto justify-content-around">
+          <div className="backChange mt-1" onClick={background1}>
+            <img src={data?.backgrounds?.background} alt="" />
+          </div>
+          <div className="backChange mt-1" id="btn" onClick={background2}>
+            <img src={data?.backgrounds?.background1} alt="" />
+          </div>
+          <div className="backChange mt-1" onClick={background3}>
+            <div></div>
+          </div>
         </div>
-        <div className="created">
-          Created By @Miigaa
-        </div>
+        <Footer />
       </div>
     </>
   );
