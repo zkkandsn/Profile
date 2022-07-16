@@ -9,8 +9,13 @@ body{
     --second-color: black;
     
   }
+  #icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
   .dark-theme{
-    --primary-color:black;
+    --primary-color:rgb(98, 95, 95);
     --second-color:#FFFF;
   }
 .abouts {
@@ -49,7 +54,7 @@ body{
 }
 .back h2 {
     letter-spacing: 2px;
-    color:var(--primary-color);
+    color:var(--second-color);
 }
 .back img{
     position: absolute;
@@ -72,7 +77,7 @@ body{
 }
 .text-ctr h2 {
     font-size: 25px;
-    color: var(--primary-color);
+    color: var(--second-color);
     margin-top: 0;
     transition: 0.5s;
     z-index: 10;
@@ -82,21 +87,21 @@ body{
 .text-ctr li{
     padding-top: 25px;
     font-size: 16px;
-    color: var(--primary-color);
+    color: var(--second-color);
     letter-spacing: 1px;
     line-height: 20px;
 }
 .text-ctr h3{
     padding-top: 35px;
     font-size: 16px;
-    color: var(--primary-color);
+    color: var(--second-color);
     letter-spacing: 1px;
     line-height: 20px;
 }
 .front {
     position: absolute;
     border-radius: 15px;
-    color: var(--primary-color);
+    color: var(--second-color);
     background-color:rgb(128,126,120) ;
     transition: 0.5s;
     height: 14%;
