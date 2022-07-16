@@ -28,8 +28,8 @@
     "girl":"М.Гэгээлэн"
   },
   "backgrounds":{
-    "background":"./pictures/background.jpg",
-    "background1":"./pictures/background1.jpg"
+    "background":"./pictures/background.jpeg",
+    "background1":"./pictures/background.webp"
   },
   "hobbys":{
     "hobby1":"Сагсан бөмбөг үзэх, тоглох",

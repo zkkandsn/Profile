@@ -20,27 +20,82 @@ const style = {
 }
   function background1() {
     document.querySelector("#background").style.background =
-      "url('./pictures/background.jpg') center center /cover";
-    document.querySelector("h2").style.color = "white";
-    document.querySelector("h4").style.color = "white";
-    document.querySelector("p").style.color = "white";
-    document.querySelector("div").style.color = "white";
+      "url('./pictures/background.jpeg') center center /cover";
+      const main = document.querySelectorAll(".main")
+      for (let i = 0; i < main.length; i++){
+        main[i].style.borderColor = "#FFFF"
+      }
+      const h4 =  document.querySelectorAll("h4")
+      for (let i = 0; i < h4.length; i++){
+        h4[i].style.color = "#FFFF"
+      }
+     const p =  document.querySelectorAll("p")
+     for (let i = 0; i < p.length; i++){
+      p[i].style.color = "#FFFF"
+    }
+      const blackTag = document.querySelectorAll("h2")
+      for (let i = 0; i < blackTag.length; i++){
+        blackTag[i].style.color = "#FFFF"
+      }
+      const aTag = document.querySelectorAll("a")
+      for (let i = 0; i < aTag.length; i++){
+        aTag[i].style.color = "#FFFF"
+      }
   }
   function background2() {
-    document.querySelector("#background").style.background =
-      "url('./pictures/background1.jpg') center center /cover";
-    document.querySelector("h2").style.color = "black";
-    document.querySelector("h4").style.color = "black";
-    document.querySelector("p").style.color = "black";
-    document.querySelector("#blackTag").style.color = "black";
+  //   let backGround2 = document.querySelector("#background")
+  //  backGround2.style.background ="url('./pictures/background.webp') center center /cover";
+  //  document.body.classList.toggle("white-theme")
+  document.querySelector("#background").style.background =
+      "url('./pictures/background.webp') center center /cover";
+      const main = document.querySelectorAll(".main"); 
+      for (let i = 0; i <  main.length; i++){
+        main[i].style.borderColor = "#FFFF"
+      }
+      const h4 =  document.querySelectorAll("h4")
+      for (let i = 0; i < h4.length; i++){
+        h4[i].style.color = "#FFFF"
+      }
+     const p =  document.querySelectorAll("p")
+     for (let i = 0; i < p.length; i++){
+      p[i].style.color = "#FFFF"
+    }
+      const blackTag = document.querySelectorAll("h2"); document.querySelectorAll("a")
+      for (let i = 0; i < blackTag.length; i++){
+        blackTag[i].style.color = "#FFFF"
+      }
+      const aTag = document.querySelectorAll("a")
+      for (let i = 0; i < aTag.length; i++){
+        aTag[i].style.color = "#FFFF"
+      }
   }
   function background3() {
-    document.querySelector("#background").style.background =
+  //  let backGround3 = document.querySelector("#background")
+  //  backGround3.style.background ="rgb(250, 140, 151)";
+  // document.body.classList.toggle("dark-theme")
+
+  document.querySelector("#background").style.background =
       "rgb(250, 140, 151)";
-    document.querySelector("h2").style.color = "white";
-    document.querySelector("h4").style.color = "white";
-    document.querySelector("p").style.color = "white";
-    document.querySelector("div").style.color = "white";
+      const main = document.querySelectorAll(".main")
+      for (let i = 0; i < main.length; i++){
+        main[i].style.borderColor = "black"
+      }
+      const h4 =  document.querySelectorAll("h4")
+      for (let i = 0; i < h4.length; i++){
+        h4[i].style.color = "black"
+      }
+     const p =  document.querySelectorAll("p")
+     for (let i = 0; i < p.length; i++){
+      p[i].style.color = "black"
+    }
+      const blackTag = document.querySelectorAll("h2")
+      for (let i = 0; i < blackTag.length; i++){
+        blackTag[i].style.color = "black"
+      }
+      const aTag = document.querySelectorAll("a")
+      for (let i = 0; i < aTag.length; i++){
+        aTag[i].style.color = "black"
+      }
   }
   return (
     <>
@@ -61,7 +116,7 @@ const style = {
         </div>
 
         <div className="container mt-5">
-          <div>
+          <div className="col-8 m-auto">
             <div id="blackTag" className="main mb-4">
               <p
                 onClick={() => setOpen(!open)}
