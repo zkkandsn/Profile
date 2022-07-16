@@ -71,7 +71,6 @@ export default function Abouts() {
           <div className="front">
             <div className="text-ctr ms-2"> 
             <h2 className="over">Over Me</h2> 
-            
             <h3>Life Style</h3>
             <li>{data?.lifestyle?.style1}</li>
             <li>{data?.lifestyle?.style2}</li> 
