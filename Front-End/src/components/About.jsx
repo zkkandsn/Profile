@@ -19,11 +19,25 @@ export default function About() {
       <div className="container">
         <div className="about col-8 d-flex m-auto justify-content-between">
           <Link to="/">Home</Link>
-          <Link id="clicked" to="/about">About</Link>
+          <Link id="clicked" to="/about">
+            About
+          </Link>
           <Link to="/about1">About1</Link>
           <Link to="/contact">Contact</Link>
-          <a target="_blank" rel="noreferrer" href="http://www.facebook.com/z1kkan">Facebook</a>
-          <a target="_blank" rel="noreferrer" href="http://www.instagram.com/zkkan">Instagram</a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="http://www.facebook.com/z1kkan"
+          >
+            Facebook
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="http://www.instagram.com/zkkan"
+          >
+            Instagram
+          </a>
         </div>
         <div className="d-flex mt-5 justify-content-around">
           <div className="profile">
@@ -36,7 +50,11 @@ export default function About() {
             >
               <span>ABOUT ME</span>
             </div>
-            <img className="profile" src="./pictures/profile1.jpg" alt="" />
+            <img
+              className="profile"
+              src="http://localhost:3000/pictures/profile1.jpg"
+              alt=""
+            />
           </div>
           <div className="profile">
             <div
@@ -48,11 +66,15 @@ export default function About() {
             >
               <span>HOBBY</span>
             </div>
-            <img className="profile" src="./pictures/profile.jpeg" alt="" />
+            <img
+              className="profile"
+              src="http://localhost:3000/pictures/profile.jpeg"
+              alt=""
+            />
           </div>
 
           <div className="profile">
-          <div
+            <div
               onMouseOver={() => setOpen2(!open2)}
               onMouseLeave={() => setOpen2(!open2)}
               aria-controls="example-collapse-text"
@@ -61,7 +83,11 @@ export default function About() {
             >
               <span>LIFESTYLE</span>
             </div>
-            <img className="profile" src="./pictures/profile3.jpg" alt="" />
+            <img
+              className="profile"
+              src="http://localhost:3000/pictures/profile3.jpg"
+              alt=""
+            />
           </div>
         </div>
         <Collapse in={open}>
@@ -79,7 +105,6 @@ export default function About() {
         </Collapse>
         <Collapse in={open1}>
           <li>{data?.hobbys?.hobby1}</li>
-          
         </Collapse>
         <Collapse in={open2}>
           <li>{data?.lifestyle?.style1}</li>

@@ -15,94 +15,99 @@ export default function Main() {
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);
-const style = {
-  color: "black"
-}
+  const style = {
+    color: "black",
+  };
   function background1() {
     document.querySelector("#background").style.background =
-      "url('./pictures/background.jpeg') center center /cover";
-      const main = document.querySelectorAll(".main")
-      for (let i = 0; i < main.length; i++){
-        main[i].style.borderColor = "#FFFF"
-      }
-      const h4 =  document.querySelectorAll("h4")
-      for (let i = 0; i < h4.length; i++){
-        h4[i].style.color = "#FFFF"
-      }
-     const p =  document.querySelectorAll("p")
-     for (let i = 0; i < p.length; i++){
-      p[i].style.color = "#FFFF"
+      "url('http://localhost:3000/pictures/background.jpeg') center center /cover";
+    const main = document.querySelectorAll(".main");
+    for (let i = 0; i < main.length; i++) {
+      main[i].style.borderColor = "#FFFF";
     }
-      const blackTag = document.querySelectorAll("h2")
-      for (let i = 0; i < blackTag.length; i++){
-        blackTag[i].style.color = "#FFFF"
-      }
-      const aTag = document.querySelectorAll("a")
-      for (let i = 0; i < aTag.length; i++){
-        aTag[i].style.color = "#FFFF"
-      }
+    const h4 = document.querySelectorAll("h4");
+    for (let i = 0; i < h4.length; i++) {
+      h4[i].style.color = "#FFFF";
+    }
+    const p = document.querySelectorAll("p");
+    for (let i = 0; i < p.length; i++) {
+      p[i].style.color = "#FFFF";
+    }
+    const blackTag = document.querySelectorAll("h2");
+    for (let i = 0; i < blackTag.length; i++) {
+      blackTag[i].style.color = "#FFFF";
+    }
+    const aTag = document.querySelectorAll("a");
+    for (let i = 0; i < aTag.length; i++) {
+      aTag[i].style.color = "#FFFF";
+    }
   }
   function background2() {
-  //   let backGround2 = document.querySelector("#background")
-  //  backGround2.style.background ="url('./pictures/background.webp') center center /cover";
-  //  document.body.classList.toggle("white-theme")
-  document.querySelector("#background").style.background =
-      "url('./pictures/background.webp') center center /cover";
-      const main = document.querySelectorAll(".main"); 
-      for (let i = 0; i <  main.length; i++){
-        main[i].style.borderColor = "#FFFF"
-      }
-      const h4 =  document.querySelectorAll("h4")
-      for (let i = 0; i < h4.length; i++){
-        h4[i].style.color = "#FFFF"
-      }
-     const p =  document.querySelectorAll("p")
-     for (let i = 0; i < p.length; i++){
-      p[i].style.color = "#FFFF"
+    //   let backGround2 = document.querySelector("#background")
+    //  backGround2.style.background ="url('./pictures/background.webp') center center /cover";
+    //  document.body.classList.toggle("white-theme")
+    document.querySelector("#background").style.background =
+      "url('http://localhost:3000/pictures/background.webp') center center /cover";
+    const main = document.querySelectorAll(".main");
+    for (let i = 0; i < main.length; i++) {
+      main[i].style.borderColor = "#FFFF";
     }
-      const blackTag = document.querySelectorAll("h2"); document.querySelectorAll("a")
-      for (let i = 0; i < blackTag.length; i++){
-        blackTag[i].style.color = "#FFFF"
-      }
-      const aTag = document.querySelectorAll("a")
-      for (let i = 0; i < aTag.length; i++){
-        aTag[i].style.color = "#FFFF"
-      }
+    const h4 = document.querySelectorAll("h4");
+    for (let i = 0; i < h4.length; i++) {
+      h4[i].style.color = "#FFFF";
+    }
+    const p = document.querySelectorAll("p");
+    for (let i = 0; i < p.length; i++) {
+      p[i].style.color = "#FFFF";
+    }
+    const blackTag = document.querySelectorAll("h2");
+    document.querySelectorAll("a");
+    for (let i = 0; i < blackTag.length; i++) {
+      blackTag[i].style.color = "#FFFF";
+    }
+    const aTag = document.querySelectorAll("a");
+    for (let i = 0; i < aTag.length; i++) {
+      aTag[i].style.color = "#FFFF";
+    }
   }
   function background3() {
-  //  let backGround3 = document.querySelector("#background")
-  //  backGround3.style.background ="rgb(250, 140, 151)";
-  // document.body.classList.toggle("dark-theme")
+    //  let backGround3 = document.querySelector("#background")
+    //  backGround3.style.background ="rgb(250, 140, 151)";
+    // document.body.classList.toggle("dark-theme")
 
-  document.querySelector("#background").style.background =
+    document.querySelector("#background").style.background =
       "rgb(250, 140, 151)";
-      const main = document.querySelectorAll(".main")
-      for (let i = 0; i < main.length; i++){
-        main[i].style.borderColor = "black"
-      }
-      const h4 =  document.querySelectorAll("h4")
-      for (let i = 0; i < h4.length; i++){
-        h4[i].style.color = "black"
-      }
-     const p =  document.querySelectorAll("p")
-     for (let i = 0; i < p.length; i++){
-      p[i].style.color = "black"
+    const main = document.querySelectorAll(".main");
+    for (let i = 0; i < main.length; i++) {
+      main[i].style.borderColor = "black";
     }
-      const blackTag = document.querySelectorAll("h2")
-      for (let i = 0; i < blackTag.length; i++){
-        blackTag[i].style.color = "black"
-      }
-      const aTag = document.querySelectorAll("a")
-      for (let i = 0; i < aTag.length; i++){
-        aTag[i].style.color = "black"
-      }
+    const h4 = document.querySelectorAll("h4");
+    for (let i = 0; i < h4.length; i++) {
+      h4[i].style.color = "black";
+    }
+    const p = document.querySelectorAll("p");
+    for (let i = 0; i < p.length; i++) {
+      p[i].style.color = "black";
+    }
+    const blackTag = document.querySelectorAll("h2");
+    for (let i = 0; i < blackTag.length; i++) {
+      blackTag[i].style.color = "black";
+    }
+    const aTag = document.querySelectorAll("a");
+    for (let i = 0; i < aTag.length; i++) {
+      aTag[i].style.color = "black";
+    }
   }
   return (
     <>
       <div id="background">
         <Header />
         <div className="m-auto d-flex flex-column mt-5">
-          <img className="profilePic" src={data?.img?.profile} alt="profile" />
+          <img
+            className="profilePic"
+            src="http://localhost:3000/pictures/profile.jpeg"
+            alt="profile"
+          />
           <div
             className="name col-8 m-auto d-flex flex-column align-items-center
         "
@@ -223,10 +228,10 @@ const style = {
         </div>
         <div className="back-frem d-flex justify-content-center m-auto justify-content-around">
           <div className="backChange mt-1" onClick={background1}>
-            <img src={data?.backgrounds?.background} alt="" />
+            <img src="http://localhost:3000/pictures/background.jpeg" alt="" />
           </div>
           <div className="backChange mt-1" id="btn" onClick={background2}>
-            <img src={data?.backgrounds?.background1} alt="" />
+            <img src="http://localhost:3000/pictures/background.webp" alt="" />
           </div>
           <div className="backChange mt-1" onClick={background3}>
             <div></div>

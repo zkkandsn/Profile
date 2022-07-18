@@ -4,15 +4,14 @@
   border-radius: 10px;
   text-align: center;
 }
-:root{
-  --primary-color: #FFFF;
-  
+:root {
+  --primary-color: #ffff;
 }
-.dark-theme{
-  --primary-color:black
+.dark-theme {
+  --primary-color: black;
 }
-.white-theme{
-  --primary-color: #FFFF;
+.white-theme {
+  --primary-color: #ffff;
 }
 .main p {
   margin-top: 8px;
@@ -36,8 +35,9 @@
   font-family: lato;
 }
 #background {
-  background-image: url(../../public/pictures/background.jpeg);
+  background-image: url("http://localhost:3000/pictures/background.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100%;
 }
@@ -51,49 +51,49 @@
 .aboutmes {
   color: var(--primary-color);
 }
-.iconsLogo img{
+.iconsLogo img {
   width: 30px;
   height: 30px;
 }
-.iconsLogo{
+.iconsLogo {
   width: 150px;
 }
-.created{
+.created {
   text-align: end;
-  color:aqua;
+  color: aqua;
   margin-right: 50px;
 }
-.back-frem{
+.back-frem {
   width: 18rem;
   height: 6rem;
-  background: #FFFF;
+  background: #ffff;
   border-radius: 23px;
-  bottom:10px;
+  bottom: 10px;
 }
-.backChange{
-width: 91px;
-height: 91px;
-background: wheat;
-overflow: hidden;
-cursor: pointer;
-border-radius: 23px;
+.backChange {
+  width: 91px;
+  height: 91px;
+  background: wheat;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 23px;
 }
-.backChange img{
-  width: 100%;
-  height: 100% ;
-  object-fit: cover;
-}
-.backChange video{
+.backChange img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.backChange div{
+.backChange video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.backChange div {
   width: 100%;
   height: 100%;
   object-fit: cover;
   background: rgb(250, 140, 151);
 }
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }

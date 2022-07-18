@@ -41,14 +41,14 @@ export default function Abouts() {
           <img
             onClick={onClick}
             className="mt-4"
-            src="./pictures/moon.png"
+            src="http://localhost:3000/pictures/moon.png"
             id="icon"
             alt=""
           />
           <img
             onClick={onClick}
             className="mt-4"
-            src="./pictures/sun.png"
+            src="http://localhost:3000/pictures/sun.png"
             id="icon"
             alt=""
           />
@@ -56,7 +56,7 @@ export default function Abouts() {
         <div className="cards col-10 d-flex m-auto align-items-center mt-5 justify-content-between">
           <div className="card ms-4 col-4 ">
             <div className="back d-flex justify-content-center">
-              <img src={data?.img?.profile1} alt="" />
+              <img src="http://localhost:3000/pictures/profile1.jpg" alt="" />
               <h2 className="d-flex align-items-center">About me</h2>
             </div>
             <div className="front">
@@ -76,7 +76,7 @@ export default function Abouts() {
           </div>
           <div className="card col-4">
             <div className="back d-flex justify-content-center">
-              <img src={data?.img?.profile2} alt="" />
+              <img src="http://localhost:3000/pictures/profile2.jpg" alt="" />
               <h2 className="d-flex align-items-center">Hobby</h2>
             </div>
             <div className="front">
@@ -95,7 +95,7 @@ export default function Abouts() {
           </div>
           <div className="card me-4 col-4">
             <div className="back d-flex justify-content-center">
-              <img src={data?.img?.profile3} alt="" />
+              <img src="http://localhost:3000/pictures/profile3.jpg" alt="" />
               <h2 className="d-flex align-items-center">Life style</h2>
             </div>
             <div className="front">

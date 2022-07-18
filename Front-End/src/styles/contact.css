@@ -15,6 +15,10 @@
   width: 500px;
   height: 150px;
 }
+#success {
+  opacity: 0;
+  color: red;
+}
 .message::placeholder {
   text-align: start;
   font-family: inherit;
